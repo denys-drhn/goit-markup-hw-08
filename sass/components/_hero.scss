@@ -1,0 +1,75 @@
+// Hero 
+
+.hero {
+	background-color: var(--background-hero-color);
+
+	&__background {
+			max-width: 1600px;
+			height: 600px;
+			margin-left: auto;
+			margin-right: auto;
+	
+			background-image: linear-gradient(to right,
+					rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+				url('../images/hero-image.jpg');
+			background-size: cover;
+			background-position: center;
+			background-color: var(--background-hero-color);
+		}
+
+		&__container {
+			padding-top: 200px;
+			padding-bottom: 200px;
+			}
+		
+		&__title {
+			color: var(--main-white-color);
+			font-weight: 900;
+			font-size: 44px;
+			line-height: 1.36;
+			letter-spacing: 0.06em;
+			text-transform: uppercase;
+			text-align: center;
+		
+			margin-left: auto;
+			margin-right: auto;
+			width: 696px;
+			}
+
+		&__button {
+			color: var(--main-white-color);
+			background-color: var(--accent-color);
+			font-family: inherit;
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 1.87;
+			font-style: normal;
+			cursor: pointer;
+			letter-spacing: 0.06em;
+			
+			padding: 10px 32px;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			
+			border-radius: 4px;
+			border: 0;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 30px;
+			
+			transition: background-color 250ms var(--timing-function);
+			}
+			
+		&__button:hover,
+		&__button:focus {
+			background-color: var(--secondary-accent-color);
+			}
+
+}
+
+
+
+
+
