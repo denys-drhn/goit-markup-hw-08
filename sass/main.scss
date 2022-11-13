@@ -10,6 +10,7 @@
 //components
 @import './components/logo';
 @import './components/page-header';
+@import './components/mobile-menu';
 @import './components/hero';
 @import './components/modal';
 @import './components/features';
@@ -18,3 +19,12 @@
 @import './components/customers-list';
 @import './components/page-footer';
 @import './components/portfolio';
+
+.hero,
+.features,
+.team-section,
+.customers-list,
+.page-footer,
+.title {
+	display: none;
+}
