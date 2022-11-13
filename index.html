@@ -16,6 +16,11 @@
 			<div class="header-container">
 				<nav class="header-nav">
 					<a class="logo" href="./index.html">Web<span class="logo logo--black">Studio</span></a>
+					<button class="header-nav__menu-button js-open-menu" type="button">
+						<svg width="40" height="40" aria-label="Переключатель мобильного меню">
+							<use href="./images/icons.svg#icon-menu"></use>
+						</svg>
+					</button>
 					<ul class="list header-nav__list">
 						<li class="header-nav__item">
 							<a class="link header-nav__link header-nav__link--current" href="./index.html">Студія</a>
@@ -168,31 +173,32 @@
 				</ul>
 			</div>
 		</section>
-		<section class="section technology-section">
-			<div class="container">
-				<h2 class="title">Чим ми займаємося</h2>
-				<ul class="list technology">
-					<li class="technology__item">
-						<div class="technology__thumb">
-							<img src="./images/code.jpg" alt="Людина працює за комп'ютером" width="370" height="294" />
-							<p class="technology__text">Десктопні додатки</p>
-						</div>
-					</li>
-					<li class="technology__item">
-						<div class="technology__thumb">
-							<img src="./images/mobile.jpg" alt="Людина з телефоном у руці працює за комп'ютером" width="370"
-								height="294" />
-							<p class="technology__text">Мобільні додатки</p>
-						</div>
-					</li>
-					<li class="technology__item">
-						<div class="technology__thumb">
-							<img src="./images/tablet.jpg" alt="Людина малює на планшеті" width="370" height="294" />
-							<p class="technology__text">Дизайнерські рішення</p>
-						</div>
-					</li>
-				</ul>
-
+		<section class="section">
+			<div class="technology-section">
+				<div class="container">
+					<h2 class="title">Чим ми займаємося</h2>
+					<ul class="list technology">
+						<li class="technology__item">
+							<div class="technology__thumb">
+								<img src="./images/code.jpg" alt="Людина працює за комп'ютером" width="370" height="294" />
+								<p class="technology__text">Десктопні додатки</p>
+							</div>
+						</li>
+						<li class="technology__item">
+							<div class="technology__thumb">
+								<img src="./images/mobile.jpg" alt="Людина з телефоном у руці працює за комп'ютером" width="370"
+									height="294" />
+								<p class="technology__text">Мобільні додатки</p>
+							</div>
+						</li>
+						<li class="technology__item">
+							<div class="technology__thumb">
+								<img src="./images/tablet.jpg" alt="Людина малює на планшеті" width="370" height="294" />
+								<p class="technology__text">Дизайнерські рішення</p>
+							</div>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</section>
 		<section class="section team-section">
@@ -474,6 +480,65 @@
 
 	</footer>
 
+	<!-- mobile-menu -->
+	<div class="mobile-menu js-menu-container">
+		<div class="container">
+			<button class="close-menu js-close-menu" type="button">
+				<svg class=" close-menu__icon" width="19" height="19" aria-label="Закрытие мобильного меню">
+					<use href="./images/icons.svg#icon-menu-close"></use>
+				</svg>
+			</button>
+
+			<nav class="mobile-menu__nav">
+
+				<ul class="list mobile-menu__list">
+					<li class="mobile-menu__item">
+						<a class="link mobile-menu__link mobile-menu__link--current" href="./index.html">Студія</a>
+					</li>
+					<li class="mobile-menu__item">
+						<a class="link mobile-menu__link" href="./portfolio.html">Портфоліо</a>
+					</li>
+					<li class="mobile-menu__item">
+						<a class="link mobile-menu__link" href="#">Контакти</a>
+					</li>
+				</ul>
+			</nav>
+
+			<ul class="list menu-address">
+				<li class="menu-address__tel">
+					<a class="link menu-address__link" href="tel:+380961111111">
+						+38 096 111 11 11
+					</a>
+				</li>
+				<li class="menu-address__mail">
+					<a class="link menu-address__link" href="mailto:info@devstudio.com">
+						info@devstudio.com
+					</a>
+				</li>
+			</ul>
+
+			<ul class="list menu-social">
+				<li class="menu-social__item">
+					<a class="link menu-social__link" href="#">Instagram</a>
+
+				</li>
+				<li class="menu-social__item">
+					<a class="link menu-social__link" href="#">Twitter</a>
+
+				</li>
+				<li class="menu-social__item">
+					<a class="link menu-social__link" href="#">Facebook</a>
+
+				</li>
+				<li class="menu-social__item">
+					<a class="link menu-social__link" href="#">LinkedIn</a>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+
+	<script src="./js/mobile-menu.js"></script>
 	<script src="./js/modal.js"></script>
 
 </body>
