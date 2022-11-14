@@ -60,7 +60,7 @@
 	top: 50%;
 	left: 50%;
 
-	width: 528px;
+	width: 450px;
 
 	padding: 40px;
 
@@ -70,16 +70,25 @@
 
 	transition: transform 250ms var(--timing-function);
 
+	@media screen and (min-width: 1200px) {
+			width: 528px;
+		}
+
 	&__title {
 	
 			font-weight: 700;
 			font-size: 20px;
-			line-height: 1.15;
+			line-height: 1.5;
 	
 			text-align: center;
 	
-			margin-bottom: 20px;
+			margin-bottom: 12px;
 		}
+
+@media screen and (min-width: 1200px) {
+	line-height: 1.15;
+}
+
 	
 	
 		&__label {
@@ -166,12 +175,17 @@
 					font-family: 'Roboto';
 					font-style: normal;
 					font-weight: 400;
-					font-size: 12px;
-					line-height: 1.16;
+					font-size: 14px;
+					line-height: 1.33;
 					letter-spacing: 0.01em;
 
 					color: rgba(117, 117, 117, 0.5);
 				}
+
+					@media screen and (min-width: 1200px) {
+						font-size: 12px;
+						line-height: 1.16;
+					}
 		}
 
 		&__button {
@@ -245,10 +259,18 @@
 
 		&__label {
 			color: var(--secondary-text-color);
-			line-height: 1.71;
+			font-size: 12px;
+			line-height: 1.16;
+			
+
 			cursor: pointer;
 	
 			padding-left: 36px;
+
+			@media screen and (min-width: 1200px) {
+				font-size: 14px;
+				line-height: 1.71;
+				}
 	
 			&--blue {
 				color: var(--accent-color);
