@@ -3,9 +3,14 @@
 .technology-section {
 	@media screen and (max-width: 1199px) {
 		display: none;
-		padding-top: 0;
+	}
+
+		@media screen and (min-width: 1200px) {
+			padding-top: 0;
+			padding-bottom: 60px;
+		}
 }
-}
+
 .technology {
 	display: flex;
 
