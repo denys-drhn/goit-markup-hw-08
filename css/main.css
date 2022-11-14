@@ -847,7 +847,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 450px;
+  width: 90%;
   padding: 40px;
   background-color: var(--main-white-color);
   -webkit-transform: scale(1) translate(-50%, -50%);
@@ -856,6 +856,11 @@ img {
   transition: -webkit-transform 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -1065,6 +1070,11 @@ img {
   line-height: 1.16;
   cursor: pointer;
   padding-left: 36px;
+}
+@media screen and (max-width: 480px) {
+  .checkbox__label {
+    font-size: 5px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .checkbox__label {
