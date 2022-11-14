@@ -73,6 +73,10 @@
 			
 			color: var(--accent-color);
 			padding-top: 302px;
+
+			@media screen and (min-width: 319px) and (max-width: 460px) {
+					font-size: 24px;
+				}
 		}
 
 		&__mail{
@@ -90,12 +94,17 @@
 		font-weight: 500;
 		font-size: 18px;
 		line-height: 1.22;
-		display: inline-flex;
+		display: flex;
+		
 
 		letter-spacing: 0.02em;
 		
 		color: var(--accent-color);
 		
+		@media screen and (min-width: 319px) and (max-width: 460px) {
+				font-size: 11px;
+			}
+
 		
 			&__item+ &__item{
 			
