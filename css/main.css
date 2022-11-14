@@ -688,7 +688,7 @@ img {
 }
 .hero__background {
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-image.jpg");
@@ -697,21 +697,49 @@ img {
   background-position: center;
   background-color: var(--background-hero-color);
 }
+@media screen and (min-width: 1200px) {
+  .hero__background {
+    height: 600px;
+  }
+}
 .hero__container {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 .hero__title {
   color: var(--main-white-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 696px;
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .hero__title {
+    width: 360px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+  }
 }
 .hero__button {
   color: var(--main-white-color);
@@ -723,7 +751,7 @@ img {
   font-style: normal;
   cursor: pointer;
   letter-spacing: 0.06em;
-  padding: 10px 32px;
+  padding: 10px 24px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -740,6 +768,11 @@ img {
   margin-top: 30px;
   -webkit-transition: background-color 250ms var(--timing-function);
   transition: background-color 250ms var(--timing-function);
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 10px 32px;
+  }
 }
 .hero__button:hover, .hero__button:focus {
   background-color: var(--secondary-accent-color);
@@ -800,7 +833,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
+  width: 450px;
   padding: 40px;
   background-color: var(--main-white-color);
   -webkit-transform: scale(1) translate(-50%, -50%);
@@ -810,12 +843,22 @@ img {
   transition: transform 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
 .modal__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    line-height: 1.15;
+  }
 }
 .modal__label {
   color: var(--secondary-text-color);
@@ -890,8 +933,8 @@ img {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
+  font-size: 14px;
+  line-height: 1.33;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -899,8 +942,8 @@ img {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
+  font-size: 14px;
+  line-height: 1.33;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -908,8 +951,8 @@ img {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
+  font-size: 14px;
+  line-height: 1.33;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -917,8 +960,8 @@ img {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
+  font-size: 14px;
+  line-height: 1.33;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -926,10 +969,16 @@ img {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
+  font-size: 14px;
+  line-height: 1.33;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+@media screen and (min-width: 1200px) {
+  .modal__comment {
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }
 .modal__button {
   color: var(--main-white-color);
@@ -998,9 +1047,16 @@ img {
 }
 .checkbox__label {
   color: var(--secondary-text-color);
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   cursor: pointer;
   padding-left: 36px;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox__label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .checkbox__label--blue {
   color: var(--accent-color);
@@ -1504,7 +1560,6 @@ img {
           transform: translatey(-100%);
 }
 
-.hero,
 .features,
 .team-section,
 .customers-list,
