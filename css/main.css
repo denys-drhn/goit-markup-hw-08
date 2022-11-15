@@ -351,8 +351,10 @@ ul {
 
 img {
   display: block;
-  min-width: 100%;
+  max-width: 100%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .list {
@@ -682,7 +684,7 @@ img {
   font-size: 34px;
   color: var(--accent-color);
 }
-@media screen and (min-width: 319px) and (max-width: 460px) {
+@media screen and (min-width: 310px) and (max-width: 460px) {
   .menu-address__tel {
     font-size: 24px;
   }
@@ -704,7 +706,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
-@media screen and (min-width: 319px) and (max-width: 460px) {
+@media screen and (min-width: 310px) and (max-width: 460px) {
   .menu-social {
     font-size: 11px;
   }
