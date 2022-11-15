@@ -89,7 +89,7 @@
 
 	background-image: linear-gradient(to right,
 			rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-		url('./../../images/header-img/header-img-mobile@1x.jpg');
+		url('../images/header-img/header-img-mobile@1x.jpg');
 
 	background-size: cover;
 	background-position: center;
@@ -102,14 +102,14 @@
 		
 			background-image: linear-gradient(to right,
 					rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-				url('./../../images/header-img/header-img-mobile@2x.jpg');
+				url('../images/header-img/header-img-mobile@2x.jpg');
 	}
 
 // img before width:1199px 1x, 2x, min-device-pixel-ratio, min-resolution.
 @media screen and (min-width: 768px) { 
 	background-image: linear-gradient(to right,
 				rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-			url('./../../images/header-img/header-img-tablet@1x.jpg');
+			url('../images/header-img/header-img-tablet@1x.jpg');
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -117,7 +117,7 @@ screen and (min-resolution: 192dpi) and (min-width: 768px),
 screen and (min-resolution: 2dppx) and (min-width: 768px) {
 	background-image: linear-gradient(to right,
 				rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-			url('./../../images/header-img/header-img-tablet@2x.jpg');
+			url('../images/header-img/header-img-tablet@2x.jpg');
 }
 	
 
@@ -125,7 +125,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 @media screen and (min-width: 1200px) {
 	background-image: linear-gradient(to right,
 				rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-			url('./../../images/header-img/header-img-desktop@1x.jpg');
+			url('../images/header-img/header-img-desktop@1x.jpg');
 		height: 600px;
 		max-width: 1600px;
 		margin-left: auto;
@@ -140,7 +140,7 @@ screen and (min-resolution: 192dpi) and (min-width: 1200px),
 screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 	background-image: linear-gradient(to right,
 				rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-			url('./../../images/header-img/header-img-desktop@2x.jpg');
+			url('../images/header-img/header-img-desktop@2x.jpg');
 		height: 600px;
 		max-width: 1600px;
 		margin-left: auto;
