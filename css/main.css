@@ -1234,7 +1234,6 @@ img {
 .features__text {
   color: var(--secondary-text-color);
   margin-top: 10px;
-  margin-bottom: 30px;
   line-height: 1.71;
 }
 @media screen and (min-width: 1200px) {
