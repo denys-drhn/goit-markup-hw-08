@@ -1226,7 +1226,7 @@ img {
   text-transform: uppercase;
   text-align: center;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .features__title {
     text-align: left;
   }
@@ -1501,6 +1501,11 @@ img {
   font-style: normal;
   line-height: 1.71;
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-address {
+    margin-bottom: 0px;
+  }
 }
 .footer-address__street {
   color: var(--main-white-color);

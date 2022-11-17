@@ -33,6 +33,10 @@
 	line-height: 1.71;
 	margin-bottom: 60px;
 
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 0px;
+	}
+
 	&__street {
 			color: var(--main-white-color);
 			margin-top: 20px;
